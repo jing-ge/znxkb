@@ -1,0 +1,35 @@
+<!--one.wxml-->
+<view class="page">
+  <view class="weui-panel">
+      <view class="weui-panel__hd">课程编号：{{oneinfo['课程编号']}}</view>
+      <view class="weui-panel__hd">课程名字：{{oneinfo['课程']}}</view>
+  </view>
+  <view class="weui-panel">
+            <view class="weui-panel__hd">以下该课程为每个个学期的信息：</view>
+            <view class="weui-panel__bd">
+              <view class="weui-media-box weui-media-box_small-appmsg">
+                <view class="weui-cells weui-cells_after-title">
+                    <navigator url="../final/final?id={{oneinfo['课程编号']}}&term=2015-2016-1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">2015-2016第1学期</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                    <navigator url="../final/final?id={{oneinfo['课程编号']}}&term=2015-2016-2" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">2015-2016第2学期</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                    <navigator url="../final/final?id={{oneinfo['课程编号']}}&term=2016-2017-1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">2016-2017第1学期</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                    <navigator url="../final/final?id={{oneinfo['课程编号']}}&term=2016-2017-2" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">2016-2017第2学期</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                </view>
+              </view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="backto">返回上一页</button>
+        </view>
+</view>

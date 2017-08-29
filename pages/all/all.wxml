@@ -1,0 +1,10 @@
+<!--all.wxml-->
+<view class="page">
+  <view class="weui-cells__title">选择你想查看的课程</view>
+  <view wx:for="{{info}}" wx:key="id" class="weui-cells weui-cells_after-title">
+      <navigator url="../one/one?id={{item['课程编号']}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">{{item['课程']}}</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+  </view>
+</view>

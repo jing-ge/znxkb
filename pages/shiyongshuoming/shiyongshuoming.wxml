@@ -1,0 +1,98 @@
+<!--shiyongshuoming.wxml-->
+<view class="page">
+  <view  bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">你好{{userInfo.nickName}},欢迎来到中南选课宝，请务必先阅读完以下信息</view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">一.使用说明</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.1使用三步走</view>
+                    <view class="weui-article__p">
+                        第一步在课程广场选择课程或者通过关键字搜索结果选择课程
+                    </view>
+                    <view class="weui-article__p">
+                        第二步选择相应的学期（目前只有2015-2016-1学期，2015-2016-2学期，2016-2017-1学期，2016-2017-2学期共四个学期的信息）
+                    </view>
+                    <view class="weui-article__p">
+                        第三步嘿嘿嘿^_^就可以查看自己想看的内容喽
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.2.底部导航栏说明</view>
+                    <view class="weui-article__p">
+                        从左到右依次是，课程广场，搜课程，以及使用说明
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.3课程广场</view>
+                    <view class="weui-article__p">
+                        该栏目涵盖了200左右个选修课程供大家查看...你可以根据课程编号或者名字找到你想要的课程
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.4搜课程</view>
+                    <view class="weui-article__p">
+                        200个太多！鬼能找得到我想要的！这里提供搜课程，输入课程关键字便可以找到你想要的课程！
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1.5使用说明</view>
+                    <view class="weui-article__p">
+                        就是我现在和你瞎bb的这些内容，虽然并没有什么卵用233333
+                    </view>
+                </view>
+            </view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">二.注意事项</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">2.1关于查到有关null的说明</view>
+                    <view class="weui-article__p">
+                        可能有的人打开课程选择了学期，却惊奇的发现平均分null，各阶段人数都是00000，顿时火冲脑门，妈的什么鬼玩意，垃圾东西，确实有这现象，现在说明一下，原因就是.........这学期人家没开这门课呀哈哈哈哈哈哈你看看其他学期的会有收获的
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">2.2关于数据</view>
+                    <view class="weui-article__p">
+                        我说我黑了学校服务器拿到了你们大家所有的成绩你信不？哈哈哈哈哈哈哈当然是骗你们的强智科技的强那可不是吹出来的hhhh
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">2.3关于4.0屏幕bug问题</view>
+                    <view class="weui-article__p">
+                        测试中发现4.0屏幕下方导航栏的文字没有了...可能土地公公有点饿把它吃了....还有上方中男选课宝的标题没有了....那可能嫦娥姐姐也
+饿了吧？qaq我不知道腾讯爸爸怎么回事呀...我明明在模拟器上一切都正常呀5555555还好不影响使用，从左到右依次....巴拉巴拉...你不
+想看我也不想说了....就那意思你懂的，随便戳两下就知道了
+                    </view>
+                    <view class="weui-article__p">
+                        不过像你们这种土豪大佬的屏幕应该都比4.0大吧！我等渣渣依旧沉寂在4.0的穷苦海洋
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">2.4关于选修课</view>
+                    <view class="weui-article__p">
+                        每门选修课都是每位老师精心准备，虽然选课宝提供了的成绩也说明不了太多问题，万一下一学期突然来个180度转弯呢，那岂不是原地爆炸hhhhh这事都是玄学说不准呢
+                    </view>
+                </view>
+            </view>
+                        <view class="weui-article__section">
+                <view class="weui-article__title">三.我有话对你说</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">3.1成绩不是一切</view>
+                    <view class="weui-article__p">
+                        虽然选课宝给出的是成绩信息，但我想说的是成绩不是一切，每个老师授课方式不同，学习体验不一样，有些课即使分不高但是我还是喜欢这个老师喜欢这门课，重要的不是分多少，而是你学到了多少！
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">3.2现在，抓住机会</view>
+                    <view class="weui-article__p">
+                        你也许是刚入大学的小萌新也许是升入大二的小腊肉（因为需要选课的估计也只剩大一大二了），有着大把时间，抓住机会，向自己高三或者更小的时候的梦努力一把，真正做一次自己喜欢做的事情，即使收效甚微，即使到了大三大四形势所迫放弃了，至少曾经努力过，至少曾经奋斗过。
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

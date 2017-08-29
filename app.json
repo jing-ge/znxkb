@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/shiyongshuoming/shiyongshuoming",
+    "pages/all/all",
+    "pages/one/one",
+    "pages/final/final",
+    "pages/search/search",
+    "pages/seares/seares"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "pink",
+    "navigationBarTitleText": "中南选课宝",
+    "navigationBarTextStyle": "yellow",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "rgb(137,137,137)",
+    "selectedColor": "pink",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/all/all",
+        "text": "课程广场",
+        "iconPath": "./images/first.png",
+        "selectedIconPath": "./images/first_on.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜课程",
+        "iconPath": "./images/search.png",
+        "selectedIconPath": "./images/search_on.png"
+      },
+      {
+        "pagePath": "pages/shiyongshuoming/shiyongshuoming",
+        "text": "使用说明",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my_on.png"
+      }
+    ]
+  }
+}

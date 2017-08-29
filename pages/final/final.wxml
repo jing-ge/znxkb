@@ -1,0 +1,47 @@
+<!--final.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-form-preview">
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">课程</view>
+                    <view class="weui-form-preview__value">{{info['课程']}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">学期</view>
+                    <view class="weui-form-preview__value">{{xueqi}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-form-preview__hd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">平均分</view>
+            <view class="weui-form-preview__value_in-hd">{{finalinfo.grade}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">统计人数</view>
+            <view class="weui-form-preview__value_in-hd">{{finalinfo['all_stu']}}人</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">90分以上</view>
+            <view class="weui-form-preview__value_in-hd">{{finalinfo['dayu90']}}人</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">80-90分</view>
+            <view class="weui-form-preview__value_in-hd">{{finalinfo['80to90']}}人</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">70-80分</view>
+            <view class="weui-form-preview__value_in-hd">{{finalinfo['70to80']}}人</view>
+          </view>
+          <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+              <view class="weui-form-preview__label">余下的就是70分以下的喽~~~</view>
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" bindtap="backto">返回上一页</button>
+    </view>
+</view>
